@@ -5,6 +5,8 @@ from starlette.responses import JSONResponse
 from starlette.requests import Request
 from typing import Optional
 from schemas import TicketInput
+from fastapi.responses import HTMLResponse
+from fastapi.templating import Jinja2Templates
 import logging
 import time
 from config.static_config import mount_static_files  # import static
@@ -21,7 +23,8 @@ mount_static_files(app)
 logging.basicConfig(
     filename="app.logs",
     level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s"
+    format="%(asctime)s - %(levelname)s - %(message)s",
+    datefmt="%Y-%m-%d %H:%M:%S"
 )
 logger = logging.getLogger(__name__)
 
@@ -34,7 +37,6 @@ async def log_requests(request: Request, call_next):
         client = f"{request.client.host}:{request.client.port}"
     else:
         client = "Unknown"
-
 
     try:
         # API request ko process karo
@@ -198,4 +200,18 @@ async def dashboard(request: Request):
             "categories": categories,
             "total_tickets":total_tickets
         },
+    )
+
+templates = Jinja2Templates(directory="templates")
+@app.get("/logs", response_class=HTMLResponse)
+async def show_logs(request: Request):
+    with open("app.logs", "r") as file:
+        logs = file.read()
+
+    return templates.TemplateResponse(
+        name="logs.html",
+        request=request,
+        context={
+            "logs": logs
+        }
     )
