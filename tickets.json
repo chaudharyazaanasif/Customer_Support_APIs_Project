@@ -1,0 +1,134 @@
+[
+    {
+        "id": 1,
+        "customer_name": "Ali Khan",
+        "email": "ali.khan@example.com",
+        "subject": "Unable to login",
+        "description": "I am unable to login to my account even though my password is correct.",
+        "category": "authentication",
+        "priority": "high",
+        "status": "open",
+        "created_at": "2026-09-01T09:15:00"
+    },
+    {
+        "id": 2,
+        "customer_name": "Sara Ahmed",
+        "email": "sara.ahmed@example.com",
+        "subject": "Payment failed",
+        "description": "My card payment failed while purchasing the premium plan.",
+        "category": "payment",
+        "priority": "urgent",
+        "status": "open",
+        "created_at": "2026-09-01T10:30:00"
+    },
+    {
+        "id": 3,
+        "customer_name": "Ahmed Raza",
+        "email": "ahmed.raza@example.com",
+        "subject": "Application crashing",
+        "description": "The application crashes whenever I try to upload a large file.",
+        "category": "technical",
+        "priority": "high",
+        "status": "in_progress",
+        "created_at": "2026-09-01T11:45:00"
+    },
+    {
+        "id": 4,
+        "customer_name": "Fatima Noor",
+        "email": "fatima.noor@example.com",
+        "subject": "Update account email",
+        "description": "I want to change the email address associated with my account.",
+        "category": "account",
+        "priority": "medium",
+        "status": "resolved",
+        "created_at": "2026-09-01T13:20:00"
+    },
+    {
+        "id": 5,
+        "customer_name": "Usman Tariq",
+        "email": "usman.tariq@example.com",
+        "subject": "Incorrect invoice",
+        "description": "The invoice generated for my subscription contains an incorrect amount.",
+        "category": "billing",
+        "priority": "high",
+        "status": "open",
+        "created_at": "2026-09-02T08:10:00"
+    },
+    {
+        "id": 6,
+        "customer_name": "Hassan Ali",
+        "email": "hassan.ali@example.com",
+        "subject": "Feature request",
+        "description": "I would like to see dark mode added to the dashboard.",
+        "category": "other",
+        "priority": "low",
+        "status": "closed",
+        "created_at": "2026-09-02T09:25:00"
+    },
+    {
+        "id": 7,
+        "customer_name": "Ali Raza",
+        "email": "ali.raza@example.com",
+        "subject": "Password reset email not received",
+        "description": "I requested a password reset but have not received the reset email.",
+        "category": "authentication",
+        "priority": "urgent",
+        "status": "open",
+        "created_at": "2026-09-02T10:40:00"
+    },
+    {
+        "id": 8,
+        "customer_name": "Ayesha Malik",
+        "email": "ayesha.malik@example.com",
+        "subject": "Double charged",
+        "description": "My account was charged twice for the same transaction.",
+        "category": "payment",
+        "priority": "urgent",
+        "status": "in_progress",
+        "created_at": "2026-09-02T12:05:00"
+    },
+    {
+        "id": 9,
+        "customer_name": "Bilal Shah",
+        "email": "bilal.shah@example.com",
+        "subject": "Slow dashboard",
+        "description": "The dashboard takes more than 30 seconds to load.",
+        "category": "technical",
+        "priority": "medium",
+        "status": "open",
+        "created_at": "2026-09-02T14:15:00"
+    },
+    {
+        "id": 10,
+        "customer_name": "Sara Ahmed",
+        "email": "sara.ahmed@example.com",
+        "subject": "Subscription cancellation",
+        "description": "Please help me cancel my current subscription.",
+        "category": "billing",
+        "priority": "low",
+        "status": "resolved",
+        "created_at": "2026-09-03T08:45:00"
+    },
+    {
+        "id": 11,
+        "customer_name": "Omar Farooq",
+        "email": "omar.farooq@example.com",
+        "subject": "Cannot access account",
+        "description": "My account appears to be locked after several unsuccessful login attempts.",
+        "category": "account",
+        "priority": "high",
+        "status": "open",
+        "created_at": "2026-09-03T09:10:00"
+    },
+    {
+        "id": 12,
+        "customer_name": "Zainab Iqbal",
+        "email": "zainab.iqbal@example.com",
+        "subject": "Missing transaction",
+        "description": "A recent payment is not appearing in my transaction history.",
+        "category": "payment",
+        "priority": "medium",
+        "status": "closed",
+        "created_at": "2026-09-03T10:00:00"
+    }
+]

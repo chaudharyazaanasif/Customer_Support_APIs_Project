@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="adminHMD professional admin dashboard template">
+  <title>Charts | adminHMD</title>
+
+  <link rel="stylesheet" href="static/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/assets/vendors/bootstrap-icons/bootstrap-icons.css">
+  <link rel="stylesheet" href="static/assets/css/style.css">
+</head>
+
+<body>
+  <div class="admin-shell">
+
+    <div class="admin-main">
+
+      <main class="dashboard-content">
+        <div class="container-fluid px-3 px-lg-4 py-4">
+
+          <div class="page-heading">
+            <div class="page-heading-copy">
+              <span class="page-icon"><i class="bi bi-bar-chart-line" aria-hidden="true"></i></span>
+              <div>
+                <p class="eyebrow mb-1">Analytics</p>
+                <h1 class="h3 mb-1">Charts</h1>
+                <p class="text-muted mb-0">Visualize revenue, channels, and operating performance.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <section>
+              <div class="row justify-content-center">
+            <div class="col-12 col-xl-4">
+              <div class="panel h-100">
+                <div class="panel-header"><div><h2 class="h5 mb-1 section-title"><i class="bi bi-pie-chart" aria-hidden="true"></i><span>Tickets Category</span></h2><p class="text-muted mb-0">Tickets Distribution by Category.</p> <p class="text-muted mb-0">Total Tickets:{{ total_tickets }}</p></div></div>
+                <div class="legend-list mt-4">
+                    {% for c in categories %}
+                    <div><span class="legend-dot {{ c.color }}"></span>{{ c.name }}<strong>{{ c.percentage }}%</strong></div>
+                    {% endfor %}
+                </div>
+              </div>
+            </div></div>
+          </section>
+        </div>
+      </main>
+
+
+    </div>
+  </div>
+
+  <script src="static/assets/js/bootstrap.bundle.min.js"></script>
+  <script src="static/assets/js/main.js"></script>
+</body>
+</html>
